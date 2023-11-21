@@ -1,23 +1,23 @@
 body {
-    background-color:lightblue;
+    background-color: aliceblue;
 }
 
 h1 {
-    margin: 3px;
+    margin: 4px;
 }
 
 .container {
-    max-width: 69%;
+    max-width: 70%;
     margin: auto;
     text-align: center;
 }
 
 .parts {
     margin: auto;
-    margin-top: 11px;
+    margin-top: 10px;
     border: 1px solid;
     padding: 5px;
-    background-color: rgb(235,171,255);
+    background-color: rgb(145, 180, 210);
 }
 
 .block {
@@ -38,7 +38,7 @@ h1 {
 
 .float {
     margin: auto;
-    margin-top: 4px;
+    margin-top: 3px;
 }
 
 .form {
@@ -46,5 +46,5 @@ h1 {
 }
 
 .submit {
-    background-color: rgb(171,15,255);
+    background-color: rgb(4, 213, 144);
 }
