@@ -1,18 +1,18 @@
-function CalminDate() {
+function minDate() {
     const today = new Date();
     return new Date(today.getFullYear() - 55, today.getMonth(), today.getDate()).toISOString().split('T')[0];
 }
 
-function CalmaxDate() {
+function maxDate() {
     const today = new Date();
     return new Date(today.getFullYear() - 18, today.getMonth(), today.getDate()).toISOString().split('T')[0];
 }
 
-const dobInput = document.getEleById('dob');
-dobInput.setAttribute('min', CalminDate());
-dobInput.setAttribute('max', CalmaxDate());
+const dobInput = document.getElementById('dob');
+dobInput.setAttribute('min', minDate());
+dobInput.setAttribute('max', maxDate());
 
-let userForm = document.getEleById("userForm");
+let userForm = document.getElementById("userForm");
 
 const getEntries = () => {
     let entries = localStorage.getItem("userEntries");
@@ -41,7 +41,7 @@ const dispEntries = () => {
 
     const table = `<h1>Entries</h1><table class="table"><tr class="bor"><th class="bor">Name</th><th class="bor">Email</th><th class="bor">Password</th><th class="bor">Dob</th><th class="bor">Accepted terms?</th></tr>${tableEntries}</table>`;
 
-    let details = document.getEleById("tableView");
+    let details = document.getElementById("tableView");
     details.innerHTML = table;
 }
 
@@ -49,11 +49,11 @@ dispEntries();
 
 const formSubmit = (event) => {
     event.preventDefault();
-    const name = document.getEleById("name").value;
-    const email = document.getEleById("email").value;
-    const password = document.getEleById("password").value;
-    const dateOfBirth = document.getEleById("dob").value; 
-    const atnc = document.getEleById("atnc").checked;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const dateOfBirth = document.getElementById("dob").value; 
+    const atnc = document.getElementById("atnc").checked;
 
     const entry = {
         name, email, password, dob: dateOfBirth, atnc 
