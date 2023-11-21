@@ -1,0 +1,50 @@
+body {
+    background-color:lightblue;
+}
+
+h1 {
+    margin: 3px;
+}
+
+.container {
+    max-width: 69%;
+    margin: auto;
+    text-align: center;
+}
+
+.parts {
+    margin: auto;
+    margin-top: 11px;
+    border: 1px solid;
+    padding: 5px;
+    background-color: rgb(235,171,255);
+}
+
+.block {
+    display: block;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.table {
+    border: 2px solid;
+    margin: auto;
+}
+
+.bor {
+    border: 1px solid;
+    padding: 1px;
+}
+
+.float {
+    margin: auto;
+    margin-top: 4px;
+}
+
+.form {
+    margin: auto;
+}
+
+.submit {
+    background-color: rgb(171,15,255);
+}
